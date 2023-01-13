@@ -20,54 +20,20 @@ h4 {
     
 }
 
-/* footer {
-    color: lightslategray;
-}
-
-.text-footer-white {
-   
-    color: lightslategray;
-}
-
-/* .bg-black {
-    
-    border: 3px solid rgb(55, 255, 0);
-} */
-
-/* footer {
-    margin-top: 12vh;
+/* .icons-wrapper {
+    position: relative;
+    max-width: 100%;
     border: 3px solid red;
 }
 
-.icons-container {
-    
-    margin-left: 0%;
-    border: 3px solid red
-}
+.pos-abs {
+    width: 100%;
+    position: absolute;
+} */
 
-ion-icon {
-    font-size: 3vh;
-    width: 4%;
+.account-icon {
+    width: 3%;
 }
-
-.container {
-    max-width: 80vh;
-    padding-left: 2%;
-    border: 3px solid azure;
-}
-
-button {
-    margin-left: 8%;
-    padding-left: 4%;
-    padding-right: 4%;
-}
-
-.copyright {
-    border: 3px solid salmon;
-    display: block;
-    margin-left: 44%;
-} 
- */
 
  .container {   
     /* border: 3px solid green; */
@@ -88,7 +54,7 @@ ion-icon {
 
 .footer-text, .cr-text {
    
-    font-size: 1.2vh;
+    font-size: 1.5vh;
     color: lightslategray;
 }
 
