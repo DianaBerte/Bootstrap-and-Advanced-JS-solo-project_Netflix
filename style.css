@@ -20,7 +20,7 @@ h4 {
     
 }
 
-footer {
+/* footer {
     color: lightslategray;
 }
 
@@ -34,20 +34,49 @@ footer {
     border: 3px solid rgb(55, 255, 0);
 } */
 
-footer {
+/* footer {
     margin-top: 12vh;
     border: 3px solid red;
 }
 
-/* .icons-container {
-        
+.icons-container {
+    
+    margin-left: 0%;
     border: 3px solid red
-} */
+}
 
 ion-icon {
     font-size: 3vh;
     width: 4%;
 }
 
+.container {
+    max-width: 80vh;
+    padding-left: 2%;
+    border: 3px solid azure;
+}
 
+button {
+    margin-left: 8%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
 
+.copyright {
+    border: 3px solid salmon;
+    display: block;
+    margin-left: 44%;
+} 
+ */
+
+.main-container {
+    border: 3px solid azure;
+}
+
+.icons-container {
+    border: 3px solid red;
+}
+
+.container {
+    border: 3px solid green;
+}
