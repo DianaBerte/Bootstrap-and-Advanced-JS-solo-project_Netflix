@@ -29,16 +29,25 @@ footer {
     color: lightslategray;
 }
 
-.bg-black {
-    border: 3px solid lightblue;
-}
-
-.icons {
-    margin: 2px;
-    border: 3px solid red
-}
-
-.card > img {
+/* .bg-black {
     
-    /* border: 3px solid red; */
+    border: 3px solid rgb(55, 255, 0);
+} */
+
+footer {
+    margin-top: 12vh;
+    border: 3px solid red;
 }
+
+/* .icons-container {
+        
+    border: 3px solid red
+} */
+
+ion-icon {
+    font-size: 3vh;
+    width: 4%;
+}
+
+
+
