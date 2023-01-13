@@ -3,6 +3,10 @@ body {
     
 }
 
+.container-fluid {
+    box-sizing: border-box;
+}
+
 h2 {
     color: whitesmoke;
 }
