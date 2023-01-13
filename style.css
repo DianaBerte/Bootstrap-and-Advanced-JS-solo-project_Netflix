@@ -69,14 +69,30 @@ button {
 } 
  */
 
-.main-container {
-    border: 3px solid azure;
+ .container {   
+    
+    border: 3px solid green;
 }
 
 .icons-container {
     border: 3px solid red;
 }
 
-.container {
-    border: 3px solid green;
+ion-icon {
+    color: lightslategray;
+    font-size: 3vh;
+    width: 4%;
+}
+
+.footer-text, .cr-text {
+   
+    font-size: 1.2vh;
+    color: lightslategray;
+}
+
+button {
+    color: lightslategray;
+    background-color: transparent;
+    border: 1px solid lightslategray;
+    margin-bottom: 1%; 
 }
