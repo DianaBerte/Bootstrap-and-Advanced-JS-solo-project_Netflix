@@ -41,6 +41,36 @@ h4 {
     
 }
 
+.card {
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.8s;
+}
+
+.info-container {
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    border-radius: 5%;
+    width: 100%;
+    text-align:left;
+    padding-left: 1.5vh;
+    z-index: 2;
+    transform: translateY(140px);
+    opacity: 0; 
+    transition: 0.8s;
+}
+
+.card:hover .info-container {
+    opacity: 1;
+    transform: translateY(155px);
+    
+}
+.card:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
 .icons-container {
     margin-bottom: 2%;
     /* border: 3px solid red; */
