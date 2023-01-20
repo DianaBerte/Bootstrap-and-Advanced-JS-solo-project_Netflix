@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    
+}
+
+.container-fluid {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+.logo {
+    max-width: 10%;
+    
+}
+
+/* .icons-wrapper {
+    position: relative;
+    max-width: 100%;
+    border: 3px solid red;
+}
+
+.pos-abs {
+    width: 100%;
+    position: absolute;
+} */
+
+.account-icon {
+    width: 3%;
+}
+
+ .container {   
+    /* border: 3px solid green; */
+    
+    margin-top: 5%;
+    
+}
+
+.card {
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.8s;
+}
+
+.info-container {
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    border-radius: 5%;
+    width: 100%;
+    text-align:left;
+    font-size: 1.5vh;
+    padding-left: 1.5vh;
+    z-index: 2;
+    transform: translateY(110px);
+    opacity: 0; 
+    transition: 0.8s;
+}
+
+.card:hover .info-container {
+    opacity: 1;
+    transform: translateY(120px);
+    
+}
+.card:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.icons-container {
+    margin-bottom: 2%;
+    /* border: 3px solid red; */
+}
+
+ion-icon {
+    color: lightslategray;
+    font-size: 3vh;
+    width: 4%;
+}
+
+.footer-text, .cr-text {
+   
+    font-size: 1.5vh;
+    color: lightslategray;
+}
+
+button {
+    padding: 0.4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: lightslategray;
+    background-color: transparent;
+    border: 1px solid lightslategray;
+    margin-bottom: 1%; 
+}
