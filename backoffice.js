@@ -31,12 +31,44 @@ let myMovie =
 }
 
 //POST is used for CREATING new resources = POST is used for adding new movies to MyList:
-const handleNewMovie = () => {  fetch('https://striveschool-api.herokuapp.com/api/movies', {
-    method: 'POST',
-    body: JSON.stringify(myMovie),
-    headers: new Headers({
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5MzJiN2U3MzczODAwMTUzNzQzNzQiLCJpYXQiOjE2NzQyMTU1NjAsImV4cCI6MTY3NTQyNTE2MH0.y0hZ_qIZ72Oxv9jN1dbn8rmFCyO4jh0K6Y40_1dFdds',
-    })
-})
+// const handleNewMovie = () => {  fetch('https://striveschool-api.herokuapp.com/api/movies', {
+//     method: 'POST',
+//     body: JSON.stringify(myMovie),
+//     headers: new Headers({
+//         'Content-Type': 'application/json',
+//         'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5MzJiN2U3MzczODAwMTUzNzQzNzQiLCJpYXQiOjE2NzQyMTU1NjAsImV4cCI6MTY3NTQyNTE2MH0.y0hZ_qIZ72Oxv9jN1dbn8rmFCyO4jh0K6Y40_1dFdds',
+//     })
+// })
+// }
+
+// fetch("https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/", {
+
+// headers: {
+// "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5M2Y0OGU3MzczODAwMTUzNzQzOWQiLCJpYXQiOjE2NzQyMDg3OTUsImV4cCI6MTY3NTQxODM5NX0.ztuggPMbDjIkPpQXr_BbaGYASuaXYR8TS8ORHPBaL4k"
+// }
+// })
+
+
+const postMovie = async(myMovie) => {
+    try {
+        let res = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(myMovie),
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5MzJiN2U3MzczODAwMTUzNzQzNzQiLCJpYXQiOjE2NzQyMTU1NjAsImV4cCI6MTY3NTQyNTE2MH0.y0hZ_qIZ72Oxv9jN1dbn8rmFCyO4jh0K6Y40_1dFdds"
+            },
+        });
+    } catch(error) {
+        console.log(error)
+    }
 }
+
+
+const submitMovie = () => {
+    myMovie = {
+        name: document.querySelector("#name").value,
+        category: document.querySelector("#category").value,
+    };
+    postMovie(myMovie);
+};
