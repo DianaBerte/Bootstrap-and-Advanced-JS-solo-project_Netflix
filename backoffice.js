@@ -41,18 +41,12 @@ let myMovie =
 // })
 // }
 
-// fetch("https://striveschool-api.herokuapp.com/api/put-your-endpoint-here/", {
-
-// headers: {
-// "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5M2Y0OGU3MzczODAwMTUzNzQzOWQiLCJpYXQiOjE2NzQyMDg3OTUsImV4cCI6MTY3NTQxODM5NX0.ztuggPMbDjIkPpQXr_BbaGYASuaXYR8TS8ORHPBaL4k"
-// }
-// })
 
 
 const postMovie = async(myMovie) => {
     try {
         let res = await fetch(url, {
-            method: "POST",
+            method: 'POST',
             body: JSON.stringify(myMovie),
             headers: {
                 "Content-Type": "application/json",
