@@ -53,6 +53,11 @@ const postMovie = async(myMovie) => {
                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2M5MzJiN2U3MzczODAwMTUzNzQzNzQiLCJpYXQiOjE2NzQyMTU1NjAsImV4cCI6MTY3NTQyNTE2MH0.y0hZ_qIZ72Oxv9jN1dbn8rmFCyO4jh0K6Y40_1dFdds"
             },
         });
+
+        if(res.ok) {
+            let data = await res.json()
+            console.log(data);
+        }
     } catch(error) {
         console.log(error)
     }
